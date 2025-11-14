@@ -8,57 +8,32 @@
 </head>
 <body>
 
-
     <header>
 
     </header>
 
-
-
     <main>
-        <form action="/nodemailer" method="POST">
+        <form action="/index" method="POST">
         <fieldset>
           <label for="nome">Nome </label>
           <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Digite seu nome"
-            required
-          />
+            type="text" id="nome" name="nome" placeholder="Digite seu nome" required/>
 
           <label for="email">Email</label>
           <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Digite seu email"
-            required
-          />
+            id="email" type="email" name="email" placeholder="Digite seu email" required/>
 
           <label for="telefone">Telefone</label>
           <input
-            type="text"
-            id="telefone"
-            name="telefone"
-            placeholder="(XX) XXXXX-XXXX"
-            required
-          />
+            type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required/>
 
           <label for="assunto">Assunto</label>
-          <textarea
-            id="assunto"
-            name="assunto"
-            placeholder="Digite o assunto"
-          ></textarea>
+          <input
+            type="text" id="assunto" name="assunto" placeholder="Digite o assunto"/>
 
           <label for="mensagem">Mensagem </label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            placeholder="Escreva sua mensagem"
-            required
-          ></textarea>
+          <input
+            type="text" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required/>
 
           <section class="acoes">
             <button type="submit" class="salvar">Enviar</button>
@@ -66,8 +41,6 @@
         </fieldset>
       </form>
     </main>
-
-
 
     <footer>
 

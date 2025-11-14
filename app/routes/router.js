@@ -3,11 +3,10 @@ var router = express.Router();
 var nodemailer = require("nodemailer");
 
 router.get("/", (req, res) => {
-  res.render("pages/nodemailer");
+  res.render("pages/index");
 });
 
-router.post("/nodemailer", (req, res) => {
-  // NODEMAILER
+router.post("/index", (req, res) => {
   const { nome, mensagem, email, telefone , assunto } = req.body;
 
   let transporter = nodemailer.createTransport({
@@ -21,8 +20,8 @@ router.post("/nodemailer", (req, res) => {
   });
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER,
+    from: "tcchelper1@gmail.com",
+    to: "gus.frs1@gmail.com" ,
     subject: `${assunto}`,
     html: `
         <h2>Novo envio do formulário</h2>
